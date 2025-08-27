@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Demo Cloudflare Worker showing ctx.waitUntil() patterns (cache, analytics, multi).",
+  "author": "Péter Abordán",
+  "description": "Demo Cloudflare Worker showing ctx.waitUntil() patterns.",
   "scripts": {
     "dev": "wrangler dev",
     "dev:local": "wrangler dev --local",
