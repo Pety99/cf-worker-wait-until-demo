@@ -41,8 +41,12 @@ export default {
     const { pathname } = url;
 
     if (pathname === "/no-wait-until") {
-      await mockAnalytics(pathname);
-      return fetchBuffer();
+      const [_analyticsResult, bufferResponse] = await Promise.all([
+        mockAnalytics(pathname),
+        fetchBuffer(),
+      ]);
+
+      return bufferResponse;
     }
 
     if (pathname === "/with-wait-until") {
