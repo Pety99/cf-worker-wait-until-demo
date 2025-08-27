@@ -23,6 +23,10 @@ You can also run `npm run dev` to use the default mode; no login is required for
 
 To observe background work, tail logs in the dev console output. The response will return immediately while the logs appear shortly after.
 
+## Diagram
+
+An Excalidraw diagram illustrating the flow for both endpoints is included: [cf-workers-wait-until-diagram.excalidraw](./cf-workers-wait-until-diagram.excalidraw). Open it in Excalidraw (for example, the [Excalidraw web app](https://excalidraw.com)) to view or edit.
+
 ## Notes
 
 - `ctx.waitUntil()` extends the lifetime of the Worker to finish the provided Promise after the response is returned, as described in the official docs: [Context (ctx) API](https://developers.cloudflare.com/workers/runtime-apis/context/).
