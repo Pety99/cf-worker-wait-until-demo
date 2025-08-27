@@ -1,0 +1,9 @@
+name = "cf-worker-wait-until-demo"
+main = "src/worker.ts"
+compatibility_date = "2025-02-20"
+
+# No Node.js APIs needed; keep it Web-standard.
+# If you need Node compatibility later, uncomment:
+# compatibility_flags = ["nodejs_compat"]
+
+
